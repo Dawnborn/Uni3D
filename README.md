@@ -128,3 +128,27 @@ Uni3D is built using the awesome [EVA](https://github.com/baaivision/EVA), [Open
   year={2024}
 }
 ```
+
+# MyInstall
+```
+conda create -n uni3d python=3.8
+conda activate uni3d
+
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu118
+
+pip install open_clip_torch==2.20.0
+pip install timm==0.9.7
+pip install deepspeed==0.10.3
+pip install open3d
+
+pip install wandb
+pip install easydict h5py ninja
+```
+
+```
+git clone git@github.com:Dawnborn/Pointnet2_PyTorch.git
+
+cd Pointnet2_PyTorch
+
+pip install pointnet2_ops_lib/.
+```
